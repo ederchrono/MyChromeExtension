@@ -7,7 +7,7 @@ body{
   background-position: 50% 50%;
   margin:0;
   font-family: sans-serif;
-
+  background-color: #EA2B1F;
 }
 .overlay{
   width:100%;
@@ -29,7 +29,6 @@ body{
   display: flex;
   padding:20px;
   color:rgba(255,255,255,0.5);
-
 }
 .top .left{
   flex: 1 0 auto;
