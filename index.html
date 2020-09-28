@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
     <script src="./vue-2-6-2.js"></script>
   </head>
   <body>
-    <div class="overlay" id="app">
+    <div id="app" class="overlay hidden" :class="{'mounted': mounted}">
       <div class="top">
-          <div class="left">
-            <div>
-              <!-- Interest: <span class="interest-text"></span> -->
-            </div>
-            <div>
-              <!-- Photo by: <a class="photoby" href="#" target="_blank"></a> -->
-            </div>
+        <div class="left">
+          <div>
           </div>
-          <div class="right">
-            <div class="date">{{ dateText }}</div>
+          <div>
           </div>
+        </div>
+        <div class="right">
+          <div class="date">{{ dateText }}</div>
+        </div>
       </div>
+
       <h1 class="time">{{ timeText }}</h1>
-      <h2 class="greeting">{{ message }}</h1>
-      <input class="user-name" type="text">
+      <input class="user-name" type="text" />
     </div>
     <script src="./script.js"></script>
   </body>

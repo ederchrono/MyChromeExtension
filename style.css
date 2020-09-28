@@ -1,77 +1,89 @@
-html, body{
-  height:100%;
+html,
+body {
+  height: 100%;
 }
-body{
+body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  margin:0;
+  margin: 0;
   font-family: sans-serif;
-  background-color: #EA2B1F;
+  background-color: #a8dadc;
 }
-.overlay{
-  width:100%;
+
+.hidden {
+  visibility: hidden;
+}
+
+.mounted {
+  /* for showing mounted elements hidden with .hidden class */
+  visibility: visible;
+}
+
+.overlay {
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#fff;
+  color: #F1FAEE;
   flex-direction: column;
 }
 
-.top{
+.top {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  font-size:25px;
+  font-size: 25px;
   display: flex;
-  padding:20px;
-  color:rgba(255,255,255,0.5);
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.5);
 }
-.top .left{
+.top .left {
   flex: 1 0 auto;
   text-align: left;
 }
-.top .right{
+.top .right {
   flex: 1 1 auto;
   text-align: right;
 }
-.time{
-  font-size:200px;
-  margin:0;
+.time {
+  font-size: 200px;
+  margin: 0;
   font-weight: 400;
 }
-.greeting{
-  font-size:80px;
+.greeting {
+  font-size: 80px;
   font-weight: 400;
-  margin:0;
+  margin: 0;
 }
-input.user-name, input.interest{
-  width:20em;
+input.user-name,
+input.interest {
+  width: 20em;
   text-align: center;
   background: 0;
   border: 0;
   border-bottom: 2px solid #fff;
   outline: 0;
-  font-size:30px;
+  font-size: 30px;
   color: #fff;
   margin-top: 20px;
-  display:none;
+  display: none;
 }
-a.photoby{
-  color: rgba(255,255,255,0.5);
+a.photoby {
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
-.change-btn{
+.change-btn {
   position: absolute;
   bottom: 20px;
   font-size: 20px;
-  cursor:pointer;
+  cursor: pointer;
   display: none;
 }
-.change-btn:hover{
+.change-btn:hover {
   transition: all 0.5s ease-out;
   text-decoration: underline;
 }

@@ -2,10 +2,12 @@ const userName = getCookie("username");
 var app = new Vue({
   el: "#app",
   data: {
+    mounted: false,
     userName: userName,
     currentTime: new Date()
   },
   mounted() {
+    this.mounted = true
     setInterval(this.updateTime, 10 * 1000);
   },
   methods: {
